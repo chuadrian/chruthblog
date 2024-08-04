@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", 'Times New Roman', Times, serif;
+}
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blog-heading span{
+    color: #a3c9f1;
+}
+.blog-heading h3{
+    font-size: 2.5rem;
+    color: #2b2b2c;
+    font-weight: 600;
+}
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.blog-box{
+    width: 350px;
+    background-color: #ffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.blog-text span{
+    color: #a3c9f1;
+    font-size: 1rem;
+}
+.blog-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2b2b2c;
+}
+.blog-text .blog-title:hover{
+    color: #a3c9f1
+    transition: all 0.3s ease;
+}
+.blog-text p{
+    color: #3d3d3d;
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+.blog-text button{
+    background-color: #a3c9f1;
+    border: 1px solid;
+    width: 106px;
+    border-radius: 16px;
+}
+.blog-text a{
+    color: #050505;
+}
+.blog-text button:hover{
+    background-color: transparent;
+}
+
+@media (max-width: 1250px){
+    .blog-box{
+        width: 300px;
+    }
+}
+@media (max-width: 1100px){
+    .blog-box{
+        width: 70%;
+    }
+}
+@media (max-width: 550px){
+    .blog-box{
+        width: 100%;
+        margin: 20px 10px;
+    }
+    #blog{
+        padding: 20px;
+    }
+}
+
+/* Navbar Styles */
+header {
+    width: 100%;
+    background-color: #f8f8ff;
+    border-bottom: 1px solid rgb(253, 253, 253);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+
+
+#search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #a3c9f1;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+    color: #2b2b2c;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #72aee6;
+}
+
+#search-results {
+    margin-top: 10px;
+    max-width: 400px;
+    background-color: #f0f8ff;
+    border: 2px solid #a3c9f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-size: 0.9rem; /* Slightly smaller font size */
+    max-height: 200px; /* Limit the maximum height */
+    overflow-y: auto; /* Add scroll if content exceeds height */
+}
+
+#search-results p {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Single-line ellipsis */
+}
+
+#search-results p:hover {
+    background-color: #a3c9f1;
+    color: #fff;
+}
+
+::placeholder {
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .logo img {
+        width: 100px;
+    }
+}
+@media (max-width: 600px) {
+    #search-input {
+        width: 100%;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    #search-results {
+        max-width: 100%;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    #search-results p {
+        margin: 3px 0;
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+}
