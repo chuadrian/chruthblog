@@ -115,6 +115,10 @@ body{
     #blog{
         padding: 20px;
     }
+    .logo img {
+    width: 30px;
+    height: auto;
+}
 }
 
 /* Navbar Styles */
