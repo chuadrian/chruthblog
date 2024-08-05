@@ -227,6 +227,9 @@ section{
         padding: 5px;
         font-size: 0.9rem;
     }
+    section{
+    margin-bottom: 40%;
+}
 }
 
 
