@@ -1,26 +1,26 @@
 
 const posts = [
-    { title: "The Best Fonts to Use For Your Website", date: "17 August 2024", category: "Web Design" },
-    { title: "What Programming Languages Suit Me", date: "18 August 2024", category: "Web Design" },
-    { title: "Being Consistent In Programming", date: "19 August 2024", category: "Web Design" },
+    { title: "The Best Fonts to Use For Your Website", date: "17 August 2024", category: "Web Design", url: "web_fonts.html" },
+    { title: "What Programming Languages Suit Me", date: "18 August 2024", category: "Web Languages", url: "what_languages.html" },
+    { title: "Being Consistent In Programming", date: "19 August 2024", category: "Being Consistent", url: "consistency.html" },
 ];
 
 function searchPosts() {
     const query = document.getElementById('search-input').value.toLowerCase();
     const resultsContainer = document.getElementById('search-results');
 
-    // Clear previous results
+    //clear previous results
     resultsContainer.innerHTML = '';
 
     if (query === '') {
-        // If search bar is cleared, clear the results
+        //if search bar is cleared, clear the results
         return;
     }
 
-    // Filter posts based on query
+    //filter posts based on queryy
     const results = posts.filter(post => post.title.toLowerCase().includes(query));
 
-    // Display new results
+    //display new results
     results.forEach(post => {
         const postElement = document.createElement('p');
         postElement.textContent = `${post.title} - ${post.date}`;
