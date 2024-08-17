@@ -13,10 +13,10 @@ function searchPosts() {
 
     if (query === '') {
         //if search bar is cleared, clear the results
-        return;
+        resultsContainer.style.display = 'none'; //hide results if search is emptyreturn;
     }
 
-    //filter posts based on queryy
+    //filter posts based on query
     const results = posts.filter(post => post.title.toLowerCase().includes(query));
 
     //display new results
@@ -25,14 +25,28 @@ function searchPosts() {
         
         //create a link for each post
         const linkElement = document.createElement('a');
-        linkElement.href = post.url;  // URL to navigate to
-        linkElement.textContent = `${post.title} - ${post.date}`;  //text to display
+        linkElement.href = post.url;  //URL to navigate to
+        linkElement.textContent = `${post.title} - ${post.date}`;  //Text to display
         
         postElement.appendChild(linkElement);
         resultsContainer.appendChild(postElement);
     });
+
+    //show results
+    resultsContainer.style.display = "block";
 }
 
-//attach event listener to the search input
-document.getElementById('search-input').addEventListener('input', searchPosts);
+//attach event listeners to the search input
+const searchInput = document.getElementById('search-input');
+searchInput.addEventListener('input', searchPosts);
+searchInput.addEventListener('focus', () => {
+    if (searchInput.value !== '') {
+        document.getElementById('search-results').style.display = 'block';
+    }
+});
 
+searchInput.addEventListener('blur', () => {
+    if (searchInput.value === '') {
+        document.getElementById('search-results').style.display = 'none';
+    }
+});
