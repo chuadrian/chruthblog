@@ -172,10 +172,10 @@ header {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    font-size: 0.7rem; /*slightly smaller font size */
+    font-size: 0.9rem; /*slightly smaller font size */
     max-height: 200px; /*limit the maximum height */
     overflow-y: auto; /*add scroll if content exceeds height */
-    disply: none;
+    display: none;
 }
 
 #search-results p {
