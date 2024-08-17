@@ -175,6 +175,7 @@ header {
     font-size: 0.7rem; /*slightly smaller font size */
     max-height: 200px; /*limit the maximum height */
     overflow-y: auto; /*add scroll if content exceeds height */
+    disply: none;
 }
 
 #search-results p {
