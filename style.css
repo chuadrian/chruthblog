@@ -124,7 +124,7 @@ body{
 /* Navbar Styles */
 header {
     width: 100%;
-    background-color: #f8f8ff;
+    background-color: #fff;
     border-bottom: 1px solid rgb(253, 253, 253);
     position: sticky;
     top: 0;
@@ -168,13 +168,13 @@ header {
     margin-top: 10px;
     max-width: 400px;
     background-color: #f0f8ff;
-    border: 2px solid #3586ff;
+    border: none;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    font-size: 0.9rem; /* Slightly smaller font size */
-    max-height: 200px; /* Limit the maximum height */
-    overflow-y: auto; /* Add scroll if content exceeds height */
+    font-size: 0.7rem; /*slightly smaller font size */
+    max-height: 200px; /*limit the maximum height */
+    overflow-y: auto; /*add scroll if content exceeds height */
 }
 
 #search-results p {
@@ -210,7 +210,7 @@ section{
 
 @media (max-width: 550px) {
     .logo img {
-        width: 100px;
+        width: 70px;
     }
 }
 @media (max-width: 600px) {
