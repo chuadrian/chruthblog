@@ -1,4 +1,6 @@
 const posts = [
+    { title: "The Importance of Clean Code: Tips for Writing Readable and Maintainable Code", date: "28 August 2024", category: "Web Development", url: "clean-code.html" },
+    { title: "React vs. Vue: Which Frontend Framework Should You Learn?", date: "21 August 2024", category: "Web Design", url: "react_vue.html" },
     { title: "The Best Fonts to Use For Your Website", date: "17 August 2024", category: "Web Design", url: "web_fonts.html" },
     { title: "What Programming Languages Suit Me", date: "18 August 2024", category: "Web Languages", url: "what_languages.html" },
     { title: "Being Consistent In Programming", date: "19 August 2024", category: "Being Consistent", url: "consistency.html" },
